@@ -8,18 +8,20 @@ const links = [
   { href: "/contact", text: "Contact" },
 ];
 
-export const Navbar= () => {
+export const Navbar = () => {
   return (
     <div className="container mx-auto">
-      <nav className="navbar">
-        <ul>
+      <nav className="navbar bg-yellow-100 text-gray-800 mb-5">
+        <ul className="flex justify-center py-5  rounded-sm">
           {links.map((l) => (
-            <li key={l.href}>
-              <Link href={l.href}>{l.text}</Link>
+            <li className="pr-6" key={l.href}>
+              <Link className="text-base" href={l.href}>
+                {l.text}
+              </Link>
             </li>
           ))}
         </ul>
       </nav>
     </div>
   );
-}
+};
