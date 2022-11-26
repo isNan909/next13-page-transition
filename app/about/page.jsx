@@ -1,13 +1,14 @@
 "use client";
 
 import { Navbar } from "./../navbar";
+import { PageWrapper } from "./../page-wrapper";
 
 export default function Aboutpage() {
   return (
     <div className="container mx-auto">
       <h1>
         <Navbar />
-        Hello, About page
+        <PageWrapper>About page</PageWrapper>
       </h1>
     </div>
   );
