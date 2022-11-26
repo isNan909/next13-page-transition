@@ -19,13 +19,12 @@ export const Navbar = () => {
           {links.map((l) => (
             <li className="pr-[2.5rem]" key={l.href}>
               <motion.div
-                whileHover={{ scale: 1.2 }}
-                whileTap={{ scale: 1.0 }}
+                whileHover={{ scale: 1.1 }}
               >
                 <Link
                   className={`${
                     l.href === path
-                      ? "border-b-2 text-sky-500 border-current"
+                      ? "text-yellow-600 font-bold"
                       : ""
                   } text-base`}
                   href={l.href}
