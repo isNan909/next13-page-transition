@@ -1,5 +1,10 @@
 "use client";
 
 export default function Aboutpage() {
-  return <h1>Hello, About page</h1>;
+  return (
+    <h1>
+      <Navbar />
+      Hello, About page
+    </h1>
+  );
 }

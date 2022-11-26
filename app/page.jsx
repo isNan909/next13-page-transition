@@ -7,7 +7,7 @@ export default function Page() {
   return (
     <PageWrapper>
       <Navbar />
-      <h1>Hello, Next.js!</h1>
+      <h1>Hello Nextjs13</h1>
     </PageWrapper>
   );
 }

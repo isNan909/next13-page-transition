@@ -10,8 +10,8 @@ const links = [
 
 export const Navbar= () => {
   return (
-    <>
-      <nav>
+    <div className="container mx-auto">
+      <nav className="navbar">
         <ul>
           {links.map((l) => (
             <li key={l.href}>
@@ -20,6 +20,6 @@ export const Navbar= () => {
           ))}
         </ul>
       </nav>
-    </>
+    </div>
   );
 }
