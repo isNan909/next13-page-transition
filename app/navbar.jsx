@@ -18,14 +18,10 @@ export const Navbar = () => {
         <ul className="flex justify-center py-5  rounded-sm">
           {links.map((l) => (
             <li className="pr-[2.5rem]" key={l.href}>
-              <motion.div
-                whileHover={{ scale: 1.1 }}
-              >
+              <motion.div whileHover={{ scale: 1.1 }}>
                 <Link
                   className={`${
-                    l.href === path
-                      ? "text-yellow-600 font-bold"
-                      : ""
+                    l.href === path ? "text-yellow-600 font-bold" : ""
                   } text-base`}
                   href={l.href}
                 >

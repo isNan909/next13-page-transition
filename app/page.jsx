@@ -5,9 +5,13 @@ import { Navbar } from "./navbar";
 
 export default function Page() {
   return (
-		<Navbar />
-    <PageWrapper>
-      <h1 className="text-3xl font-bold underline">Hello, Next.js!</h1>
-    </PageWrapper>
+    <>
+      <Navbar />
+      <PageWrapper>
+        <div className="container mx-auto">
+          <h1 className="text-3xl font-bold mx-auto text-center">Next.js with Framer-motion</h1>
+        </div>
+      </PageWrapper>
+    </>
   );
 }
